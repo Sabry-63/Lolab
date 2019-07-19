@@ -14,10 +14,26 @@ body {
 /* End Nav--------------*/
 /* Start home -----------------*/
 #Home-section{
-    background:url(../img/home/home-1.jpg) no-repeat;
-    min-height: 700px;
+    height: 100vh;
     background-attachment: fixed;
-    background-size: cover;
+    animation: bgImages 9s infinite ease-in-out
+}
+@keyframes bgImages{
+    0%{
+        background:url(../img/home/home-1.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    50%{
+        background:url(../img/home/home-2.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    100%{
+        background:url(../img/home/home-3.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 }
 #Home-section .dark-overlay{
     position: absolute;
@@ -29,14 +45,14 @@ body {
     padding-top:150px ;
 }
 #Home-section .card-form{
-    opacity: .8;
+    opacity: .6;
     border-radius: 1em;
 }
 #Home-section .fas{
     color: #176cc7;
     background: #FFF;
     padding: 5px;
-    border-radius:.25em 
+    border-radius:.25em
 }
 /*End home----------------------*/
 /*Start Explore -------------*/
